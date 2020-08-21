@@ -1,0 +1,36 @@
+/*----------------------/*
+|     TEGNOLOGIES
+\*-----------------------*/
+
+/* - - - - - - - - - /*
+       
+/* - - - - - - - - - */
+
+#tegno{
+    display: flex;
+    flex-flow: row wrap;
+    margin: $margin-large auto;
+
+    .box-tegno{
+        @include box;
+        .box-tegno-icons{
+            display: flex;
+            flex-flow: row wrap;
+            flex-basis: 30%;
+            width: 88px;
+
+            i{
+                font-size: 40px;
+                margin: 5px auto;
+            }
+        }
+
+        .box-tegno-text{
+            flex-basis: 70%;
+            padding-left: 5px;padding-right: 5px;
+        }        
+    }
+
+        
+}
+

@@ -1,0 +1,35 @@
+/*----------------------/*
+|    FOOTER
+\*-----------------------*/
+
+#footer{
+    background-color: $main-color;
+    height: 40px;
+
+    .footer-content{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        height: 100%;
+
+        h4{
+            flex-basis: 50%;
+            color: $icon-color;
+            font-size: 24px;
+
+        }
+
+        .footer-icons{
+            display: flex;
+            flex-basis: 45%;
+            justify-content: space-between;
+            padding-left: 10px;
+
+            i{
+                font-size: 24px;
+            }
+        }
+    }
+
+    
+}

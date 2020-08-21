@@ -1,0 +1,35 @@
+/*----------------------/*
+|     PROYECTS
+\*-----------------------*/
+
+#projects{
+    
+
+    .project{
+        @include box;
+        height: 120px;
+
+        img{
+            width: 88px;
+            height: 88px;
+            padding:0 5px;
+            margin: auto;
+        }
+    }
+    .project-text{
+        flex-basis: 70%;
+        // padding: $padding-s;
+
+        .sub-title-project{
+            margin: 0;
+        }
+    }
+}
+
+.caja{
+    width: 88px ;
+    height: 88px;
+    background-color: gray;
+    margin: auto 0;
+    padding-right: 16px;
+}

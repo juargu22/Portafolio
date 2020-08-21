@@ -1,0 +1,77 @@
+/*----------------------/*
+|     HEADER STYLES
+\*-----------------------*/
+
+#header{
+    background-color:rgba($color: #000, $alpha: .6);
+    height: 400px;
+    color: $color-white;
+
+    #main-menu{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: 60%;
+        height: 300px;
+        background-color: rgba($color: $bg-grey, $alpha: .97);
+        border-radius: 20px 0 0 20px;
+
+        h3{
+            width: 80%;
+            color: $main-color;
+            // padding: $padding-n ;
+            margin: $margin-large $margin-normal 0;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: $margin-small;
+            
+
+            li{
+                border-bottom: 2px solid $letter-color;
+                height: 50px;
+                margin: 0 $margin-normal;
+
+                a{
+                    color: $letter-color;
+                    line-height: 50px;
+                }
+               
+            }
+        }
+         
+    }
+
+    .header-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        height: 375px;
+
+        h3{
+            color: $color-white;
+        }
+
+        p{
+            color: $color-white;
+        }
+        
+        
+        
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            margin-top: $margin-normal;
+
+            .button{
+                margin-right: $margin-small;
+            }
+        }
+    }
+
+}
