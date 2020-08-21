@@ -18,10 +18,9 @@
         FONTS
 /* - - - - - - - - - */
 @font-face {
-  /*  ICONS  */
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?uqt7wx");
-  src: url("fonts/icomoon.eot?uqt7wx#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?uqt7wx") format("truetype"), url("fonts/icomoon.woff?uqt7wx") format("woff"), url("fonts/icomoon.svg?uqt7wx#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?6mnnbl");
+  src: url("fonts/icomoon.eot?6mnnbl#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?6mnnbl") format("truetype"), url("fonts/icomoon.woff?6mnnbl") format("woff"), url("fonts/icomoon.svg?6mnnbl#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -41,50 +40,76 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
+.icon-flex:before {
+  content: "";
+  color: #818185;
+}
+
+.icon-responsive:before {
   content: "";
 }
 
-.icon-javascript:before {
-  content: "";
+.icon-grid:before {
+  content: "";
+  color: #818185;
 }
 
 .icon-figma:before {
-  content: "";
+  content: "";
+  color: #f24e1e;
 }
 
 .icon-illustrator:before {
-  content: "";
+  content: "";
+  color: #ff7c00;
 }
 
 .icon-photoshop:before {
-  content: "";
+  content: "";
+  color: #00c8ff;
 }
 
 .icon-bootstrap:before {
-  content: "";
+  content: "";
+  color: #563d7c;
 }
 
-.icon-node-dot-js:before {
-  content: "";
+.icon-js:before {
+  content: "";
+  color: #f7df1e;
+}
+
+.icon-mail:before {
+  content: "";
 }
 
 .icon-menu:before {
   content: "";
-  color: #FFFFFF;
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 16px;
-  margin-right: 16px;
   font-size: 24px;
+  color: #FFFFFF;
+  top: 16px;
+  right: 16px;
 }
 
-.icon-facebook:before {
+.icon-cross:before {
+  content: "";
+  position: absolute;
+  font-size: 24px;
+  color: #FFFFFF;
+  top: 16px;
+  right: 16px;
+}
+
+.icon-f:before {
   content: "";
 }
 
-.icon-whatsapp:before {
+.icon-i:before {
+  content: "";
+}
+
+.icon-w:before {
   content: "";
 }
 
@@ -94,14 +119,17 @@
 
 .icon-html:before {
   content: "";
+  color: #f24e1e;
 }
 
 .icon-css3:before {
   content: "";
+  color: #346080;
 }
 
 .icon-git:before {
   content: "";
+  color: #f24e1e;
 }
 
 /* - - - - - - - - - - /*
@@ -319,6 +347,21 @@ p {
 /* - - - - - - - - - /*
 
 /* - - - - - - - - - */
+#service .service-img {
+  position: relative;
+  overflow: hidden;
+}
+#service .service-img .blue {
+  position: absolute;
+  top: -23px;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(52, 96, 128, 0.5);
+  transform: rotate(45deg);
+  margin: 0 auto;
+}
 #service .service-img img {
   margin: 0 auto;
 }

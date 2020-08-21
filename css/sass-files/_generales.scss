@@ -8,11 +8,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?vod4ej');
-  src:  url('fonts/icomoon.eot?vod4ej#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?vod4ej') format('truetype'),
-    url('fonts/icomoon.woff?vod4ej') format('woff'),
-    url('fonts/icomoon.svg?vod4ej#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?6mnnbl');
+  src:  url('fonts/icomoon.eot?6mnnbl#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6mnnbl') format('truetype'),
+    url('fonts/icomoon.woff?6mnnbl') format('woff'),
+    url('fonts/icomoon.svg?6mnnbl#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -34,35 +34,55 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
-  content: "\e907";
+.icon-flex:before {
+  content: "\e908";
+  color: #818185;
 }
 .icon-responsive:before {
   content: "\e900";
 }
 .icon-grid:before {
   content: "\e901";
+  color: #818185;
 }
 .icon-figma:before {
   content: "\e902";
+  color: #f24e1e;
 }
 .icon-illustrator:before {
   content: "\e903";
+  color: #ff7c00;
 }
 .icon-photoshop:before {
   content: "\e904";
+  color: #00c8ff;
 }
 .icon-bootstrap:before {
   content: "\e905";
+  color: #563d7c;
 }
 .icon-js:before {
   content: "\e906";
+  color: #f7df1e;
+}
+.icon-mail:before {
+  content: "\e907";
 }
 .icon-menu:before {
   content: "\e9bd";
+  position: absolute;
+  font-size: 24px;
+  color: $color-white;
+  top: 16px;
+  right: 16px;
 }
 .icon-cross:before {
   content: "\ea0f";
+  position: absolute;
+  font-size: 24px;
+  color: $color-white;
+  top: 16px;
+  right: 16px;
 }
 .icon-f:before {
   content: "\ea91";
@@ -76,16 +96,18 @@
 .icon-github:before {
   content: "\eab0";
 }
-.icon-html-five:before {
+.icon-html:before {
   content: "\eae4";
+  color: #f24e1e;
 }
 .icon-css3:before {
   content: "\eae6";
+  color: $main-color;
 }
 .icon-git:before {
   content: "\eae7";
+  color: #f24e1e;
 }
-
   /* - - - - - - - - - - /*
         GENERAL STYLES  
   /* - - - - - - - - - - */
