@@ -36,10 +36,11 @@
 
 .icon-flex:before {
   content: "\e908";
-  color: #818185;
+  color: $main-color;
 }
 .icon-responsive:before {
   content: "\e900";
+  font-size: 80px;
 }
 .icon-grid:before {
   content: "\e901";
@@ -70,19 +71,10 @@
 }
 .icon-menu:before {
   content: "\e9bd";
-  position: absolute;
-  font-size: 24px;
-  color: $color-white;
-  top: 16px;
-  right: 16px;
 }
 .icon-cross:before {
   content: "\ea0f";
-  position: absolute;
-  font-size: 24px;
-  color: $color-white;
-  top: 16px;
-  right: 16px;
+  
 }
 .icon-f:before {
   content: "\ea91";
@@ -124,6 +116,10 @@
 .container{
     width: 90%;
     margin: 0 auto;
+
+    @media (min-width:768px){
+      width: 94%;
+    }
 }
 a{
     display: bolck;
@@ -132,6 +128,23 @@ a{
 }
 img{
     display: block;
+}
+
+
+.icons-menu{
+  position: absolute;
+  font-size: 24px;
+  color: $color-white;
+  top: 16px;
+  right: 16px;
+
+  @media (min-width:768px){
+    top: 24px;
+    right: 24px;
+  }
+  @media (min-width:1024px){
+    display: none;
+  }
 }
 
  /* - - - - - - - - - - /*
@@ -194,6 +207,12 @@ p{
    font-weight: bold;
    color: $color-white;
    background-color: $main-color;
+
+   @media (min-width:768px){
+     width: 162px;
+     height: 48px;
+     font-size: $font-nr;
+   }
 }
 .button-white{
   border: 2px solid $color-white;
@@ -206,13 +225,11 @@ p{
 
 @mixin box { /* estilos de cajas con sombra */
   display: flex;     
-  width: 90%;
+  max-width: 100%;
+  height: 110px;
   border-radius: 10px;
   box-shadow: 0 0 10px $icon-color;
   padding: $padding-s;
+  margin: 0 auto;
   margin-top: $margin-normal;  
-
-  // @media (min-width:544px){
-  //   max-width: 348px;
-  // }
 }

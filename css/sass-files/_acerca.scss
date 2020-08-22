@@ -2,20 +2,41 @@
 |       ACERCA DE
 \*-----------------------*/
 
-/* - - - - - - - - - /*
-        
-/* - - - - - - - - - */
-
 #acerca{
 
     img{
-        max-width: 199px;
+        width: 199px;
         max-height: auto;
         text-align: center;
         background-color: aqua;
         box-shadow: -10px 10px 0 $main-color;
         margin: $margin-large auto;
     }
+}
+
+/* - - - - - - - - - /*
+   ACERCA RESPONSIVE
+/* - - - - - - - - - */
+
+@media (min-width:768px){
+    #acerca{
+        display: flex;
+        flex-flow: row nowrap;
+
+        img{
+            // flex-basis: 50%;
+            width: 300px;
+            height: auto;
+            margin: auto auto;
+        }
+
+        .acerca-text{
+            padding: 20px;
+            flex-basis: 50%;
+        }
+    }
+        
+
 }
 
 

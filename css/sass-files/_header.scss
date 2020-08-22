@@ -51,13 +51,14 @@
         flex-direction: column;
         justify-content: center;
 
-        height: 375px;
+        height: 100%;
 
         h3{
             color: $color-white;
         }
 
         p{
+            max-width: 400px;
             color: $color-white;
         }
         
@@ -73,5 +74,15 @@
             }
         }
     }
-
 }
+
+/*----------------------/*
+|     HEADER RESPONSIVE
+\*-----------------------*/
+
+@media (min-width: 768px){
+    #header{
+        height: 508px;
+    }
+}
+

@@ -2,10 +2,6 @@
 |     TEGNOLOGIES
 \*-----------------------*/
 
-/* - - - - - - - - - /*
-       
-/* - - - - - - - - - */
-
 #tegno{
     display: flex;
     flex-flow: row wrap;
@@ -13,15 +9,30 @@
 
     .box-tegno{
         @include box;
+
         .box-tegno-icons{
             display: flex;
             flex-flow: row wrap;
             flex-basis: 30%;
-            width: 88px;
+
+            @media (min-width:668px){
+                padding: 0 20px;
+            }
 
             i{
-                font-size: 40px;
-                margin: 5px auto;
+                font-size: 32px;
+                margin: auto auto;
+
+                @media (min-width: 402px){
+                    font-size: 36px;
+                }
+                @media (min-width: 468px){
+                    font-size: 48px;
+                }
+                @media (min-width: 579px){
+                    // font-size: 56px;
+                    padding: 0 10px;
+                }
             }
         }
 
@@ -29,8 +40,28 @@
             flex-basis: 70%;
             padding-left: 5px;padding-right: 5px;
         }        
-    }
+    }   
+/* - - - - - - - - - /*
+   TEGNO RESPONSIVE
+/* - - - - - - - - - */
 
-        
+    @media (min-width:768px){
+    
+        .box-tegno{
+            width: 43%;
+
+            .box-tegno-icons{
+
+                i{
+                    font-size: 38px;
+                    padding: 0;
+                }
+            }
+
+        }    
+    }
+     
 }
+
+
 

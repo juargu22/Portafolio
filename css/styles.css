@@ -42,11 +42,12 @@
 
 .icon-flex:before {
   content: "";
-  color: #818185;
+  color: #346080;
 }
 
 .icon-responsive:before {
   content: "";
+  font-size: 80px;
 }
 
 .icon-grid:before {
@@ -85,20 +86,10 @@
 
 .icon-menu:before {
   content: "";
-  position: absolute;
-  font-size: 24px;
-  color: #FFFFFF;
-  top: 16px;
-  right: 16px;
 }
 
 .icon-cross:before {
   content: "";
-  position: absolute;
-  font-size: 24px;
-  color: #FFFFFF;
-  top: 16px;
-  right: 16px;
 }
 
 .icon-f:before {
@@ -148,6 +139,11 @@
   width: 90%;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 94%;
+  }
+}
 
 a {
   display: bolck;
@@ -157,6 +153,25 @@ a {
 
 img {
   display: block;
+}
+
+.icons-menu {
+  position: absolute;
+  font-size: 24px;
+  color: #FFFFFF;
+  top: 16px;
+  right: 16px;
+}
+@media (min-width: 768px) {
+  .icons-menu {
+    top: 24px;
+    right: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .icons-menu {
+    display: none;
+  }
 }
 
 /* - - - - - - - - - - /*
@@ -222,6 +237,13 @@ p {
   color: #FFFFFF;
   background-color: #346080;
 }
+@media (min-width: 768px) {
+  .button {
+    width: 162px;
+    height: 48px;
+    font-size: 14px;
+  }
+}
 
 .button-white {
   border: 2px solid #FFFFFF;
@@ -273,12 +295,13 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 375px;
+  height: 100%;
 }
 #header .header-text h3 {
   color: #FFFFFF;
 }
 #header .header-text p {
+  max-width: 400px;
   color: #FFFFFF;
 }
 #header .header-text .buttons {
@@ -291,13 +314,18 @@ p {
 }
 
 /*----------------------/*
+|     HEADER RESPONSIVE
+\*-----------------------*/
+@media (min-width: 768px) {
+  #header {
+    height: 508px;
+  }
+}
+/*----------------------/*
 |       ACERCA DE
 \*-----------------------*/
-/* - - - - - - - - - /*
-
-/* - - - - - - - - - */
 #acerca img {
-  max-width: 199px;
+  width: 199px;
   max-height: auto;
   text-align: center;
   background-color: aqua;
@@ -305,40 +333,88 @@ p {
   margin: 48px auto;
 }
 
+/* - - - - - - - - - /*
+   ACERCA RESPONSIVE
+/* - - - - - - - - - */
+@media (min-width: 768px) {
+  #acerca {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  #acerca img {
+    width: 300px;
+    height: auto;
+    margin: auto auto;
+  }
+  #acerca .acerca-text {
+    padding: 20px;
+    flex-basis: 50%;
+  }
+}
 /*----------------------/*
 |     TEGNOLOGIES
 \*-----------------------*/
-/* - - - - - - - - - /*
-
-/* - - - - - - - - - */
 #tegno {
   display: flex;
   flex-flow: row wrap;
   margin: 48px auto;
+  /* - - - - - - - - - /*
+     TEGNO RESPONSIVE
+  /* - - - - - - - - - */
 }
 #tegno .box-tegno {
   /* estilos de cajas con sombra */
   display: flex;
-  width: 90%;
+  max-width: 100%;
+  height: 110px;
   border-radius: 10px;
   box-shadow: 0 0 10px #818185;
   padding: 16px;
+  margin: 0 auto;
   margin-top: 24px;
 }
 #tegno .box-tegno .box-tegno-icons {
   display: flex;
   flex-flow: row wrap;
   flex-basis: 30%;
-  width: 88px;
+}
+@media (min-width: 668px) {
+  #tegno .box-tegno .box-tegno-icons {
+    padding: 0 20px;
+  }
 }
 #tegno .box-tegno .box-tegno-icons i {
-  font-size: 40px;
-  margin: 5px auto;
+  font-size: 32px;
+  margin: auto auto;
+}
+@media (min-width: 402px) {
+  #tegno .box-tegno .box-tegno-icons i {
+    font-size: 36px;
+  }
+}
+@media (min-width: 468px) {
+  #tegno .box-tegno .box-tegno-icons i {
+    font-size: 48px;
+  }
+}
+@media (min-width: 579px) {
+  #tegno .box-tegno .box-tegno-icons i {
+    padding: 0 10px;
+  }
 }
 #tegno .box-tegno .box-tegno-text {
   flex-basis: 70%;
   padding-left: 5px;
   padding-right: 5px;
+}
+@media (min-width: 768px) {
+  #tegno .box-tegno {
+    width: 43%;
+  }
+  #tegno .box-tegno .box-tegno-icons i {
+    font-size: 38px;
+    padding: 0;
+  }
 }
 
 /*----------------------/*
@@ -370,24 +446,52 @@ p {
   margin-top: 24px;
 }
 
+@media (min-width: 768px) {
+  #service {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  #service .service-img {
+    flex-basis: 50%;
+  }
+  #service .service-text {
+    flex-basis: 50%;
+    padding: 0 16px;
+  }
+}
+/*----------------------/*
+|     MY WORK
+\*-----------------------*/
+@media (min-width: 768px) {
+  #work {
+    margin-top: 48px;
+  }
+  #work p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /*----------------------/*
 |     PROYECTS
 \*-----------------------*/
 #projects .project {
   /* estilos de cajas con sombra */
   display: flex;
-  width: 90%;
+  max-width: 100%;
+  height: 110px;
   border-radius: 10px;
   box-shadow: 0 0 10px #818185;
   padding: 16px;
+  margin: 0 auto;
   margin-top: 24px;
   height: 120px;
+  flex-flow: row nowrap;
 }
 #projects .project img {
-  width: 88px;
-  height: 88px;
   padding: 0 5px;
   margin: auto;
+  flex-basis: 20%;
 }
 #projects .project-text {
   flex-basis: 70%;
@@ -395,10 +499,16 @@ p {
 #projects .project-text .sub-title-project {
   margin: 0;
 }
+@media (min-width: 768px) {
+  #projects {
+    margin-top: 48px;
+  }
+  #projects .project {
+    width: 70%;
+  }
+}
 
 .caja {
-  width: 88px;
-  height: 88px;
   background-color: gray;
   margin: auto 0;
   padding-right: 16px;
@@ -429,6 +539,20 @@ p {
   padding-left: 12px;
   padding-top: 16px;
   margin-top: 16px;
+}
+@media (min-width: 768px) {
+  #contacto {
+    margin-top: 48px;
+  }
+  #contacto p {
+    width: 70%;
+    margin: 24px auto;
+  }
+  #contacto form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*----------------------/*

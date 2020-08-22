@@ -31,4 +31,20 @@
             margin-top: $margin-small;
         }
     }
+
+    @media (min-width: 768px){
+
+        margin-top: $margin-large;
+
+        p{
+            width: 70%;
+            margin: $margin-normal auto;
+        }
+
+        form{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }

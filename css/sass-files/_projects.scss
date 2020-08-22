@@ -8,12 +8,12 @@
     .project{
         @include box;
         height: 120px;
+        flex-flow: row nowrap;
 
-        img{
-            width: 88px;
-            height: 88px;
+        img{           
             padding:0 5px;
             margin: auto;
+            flex-basis: 20%;
         }
     }
     .project-text{
@@ -24,11 +24,18 @@
             margin: 0;
         }
     }
+
+    @media (min-width:768px){
+
+        margin-top: $margin-large;
+
+        .project{
+            width: 70%;
+        }
+    }
 }
 
 .caja{
-    width: 88px ;
-    height: 88px;
     background-color: gray;
     margin: auto 0;
     padding-right: 16px;
