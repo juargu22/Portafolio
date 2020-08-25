@@ -25,18 +25,31 @@
         }
     }
 
-    @media (min-width:768px){
-
-        margin-top: $margin-large;
-
-        .project{
-            width: 70%;
-        }
-    }
+    
 }
 
 .caja{
     background-color: gray;
     margin: auto 0;
     padding-right: 16px;
+}
+
+@media (min-width:768px){
+
+    #projects{
+        margin-top: $margin-large;
+    
+        .project{
+            width: 70%;
+
+            img{
+                max-width: 110px;
+            }
+        }
+
+        .project-text{
+            padding-right: $padding-s;
+        }
+
+    }
 }

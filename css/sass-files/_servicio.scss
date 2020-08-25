@@ -48,10 +48,12 @@
 
         .service-img{
             flex-basis: 50%;
+            order: 2;
         }
 
         .service-text{
             flex-basis: 50%;
+            order: 1;
             padding: 0 16px;
         }
     }

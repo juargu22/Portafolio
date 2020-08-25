@@ -16,6 +16,7 @@
             flex-basis: 50%;
             color: $icon-color;
             font-size: 24px;
+            padding-left: 30px;
 
         }
 
@@ -29,6 +30,10 @@
                 font-size: 24px;
             }
         }
+    }
+
+    @media(min-width:1024px){
+
     }
 
     

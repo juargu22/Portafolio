@@ -11,22 +11,23 @@
 
     form{
         margin: $margin-large 0;
+        width: 100%;
 
         input{
-            width: 100%;
+            width: 98.5%;
             height: 48px;
             border: 1px solid $bg-grey;
             border-radius: 5px;
-            padding-left: 12px;
+            padding-left: 8px;
             margin-top: $margin-small;
 
         }
 
         textarea{
-            width: 100%;
+            width: 98.5%;
             border: 1px solid $bg-grey;
             border-radius: 5px;
-            padding-left: 12px;
+            padding-left: 8px;
             padding-top: $padding-s;
             margin-top: $margin-small;
         }
